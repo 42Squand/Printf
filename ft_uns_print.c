@@ -18,3 +18,4 @@ void	ft_uns_print(unsigned int numb, int *size)
 		ft_uns_print(numb / 10, size);
 	ft_char_print (numb % 10 + '0', size);
 }
+

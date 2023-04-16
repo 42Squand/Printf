@@ -62,3 +62,22 @@ int	ft_printf(const char *str, ...)
 	return (size);
 }
 
+/* fonctionement de va_arg
+il faut d'abord créer une va_list (args dans l'exemple)
+les ... sont appelez ellipses et servent à indiquer que la fonction peut prendre un nombre variable d'argument exemple : %d, %s %x etc...
+va_start initialise la va_list (args) et prend la valeur donner dans str.
+va_end spécifie la fin de l'utilisation des arguments ( permet de libérer les ressources) (provoque des memory leak si pas utilisée).
+i = parcour la chaine 
+size = retourne la taille de la sortie
+
+hexadécimal les chiffre allant de 10 à 15 sont représenter par ABCDEF ou abcdef
+calcul exemple :
+valeur 123:
+123 / 16 = 7,6875 on garde 7
+123 % 16 = 11 on obtient B ou b
+résulat hexadécimal : 7B ou 7b c'est la même chose la majuscule n'a aucune incidence (dépend de x ou X)
+
+base 10 = 0123456789
+base 16 = 0123456789abcdef ou 0123456789ABCDEF
+
+*/

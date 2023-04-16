@@ -36,3 +36,5 @@ void	ft_ptr_print(size_t numb, int *size)
 	else
 		ft_mod(numb, size);
 }
+
+/*ft_ptr_print affiche un pointeur en héxadécimal*/

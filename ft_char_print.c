@@ -17,3 +17,5 @@ void	ft_char_print(int c, int *size)
 	write(1, &c, 1);
 	(*size)++;
 }
+
+/* écrit un charactère et incrémente size*/
